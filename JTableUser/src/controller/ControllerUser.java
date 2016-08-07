@@ -108,4 +108,9 @@ public class ControllerUser extends AbstractTableModel{
         this.fireTableDataChanged();
         return 1;
     }
+
+    @Override
+    public boolean isCellEditable(int rowIndex, int columnIndex) {
+        return true;
+    }
 }
